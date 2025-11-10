@@ -1,4 +1,4 @@
-FROM --platform=$BUILDPLATFORM golang:1.21-alpine AS build
+FROM --platform=$TARGETPLATFORM golang:1.21-alpine AS build
 WORKDIR /app
 COPY . .
 RUN go mod init proxy
